@@ -2,5 +2,6 @@
 
 Versioning is via [this versioning guide](./.ajournal/versioning%20guide.md)
 
-Current status 0.0.1 -- Raw Concept
-    - [Concept Doc](./doc/design/concept.md)# alcaeus
+#####s Current status 0.0.2
+- [Raw Concept](./doc/design/concept.md)
+- [Tech Approach 1](./doc/design/tech%20approach.md)
