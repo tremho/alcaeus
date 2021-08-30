@@ -1,0 +1,15 @@
+
+
+# Sign in
+
+Sign-in / Sign-up will be done using OAuth providers 
+
+- Apple 
+- Google
+- Facebook
+
+No user/password recording will be done.  However, I am considering a creating a white-label OAuth service.
+
+## First TODO: Read up on each of these
+
+[Sign-in with Apple](https://developer.apple.com/sign-in-with-apple/get-started/)
