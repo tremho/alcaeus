@@ -15,6 +15,7 @@ Even though we use only the revision number here,
 we can have multiple revs per section by appending other numbers.
 for example 0.0.10, 0.0.11, etc.
 or even 0.0.19, 0.0.110...
+_or better yet:_ __use -pre-release.xxx__ numbering for revisions within these described semantic boundaries.
 
 ###### 0.0.1x Raw concept
 White paper describing the product
