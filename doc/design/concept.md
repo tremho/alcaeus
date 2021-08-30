@@ -1,5 +1,5 @@
 
-#Alcaeus
+# Alcaeus
 
 Alcaeus is named for an early Greek Poet/Musician who was outspoken
 in his expression of love, democracy, and freedom.
@@ -33,9 +33,9 @@ to a work.  Producers control who has access to their projects.
 #### Permissions
 - modifies user access
  - Audience -- a set of users that has permissions independent of public
- - Band -- a set of Producers that area allowed access to each other's
+ - Band -- a set of Producers that are allowed access to each other's
 space as producers.
-- Allowed Contributers -- a set of Contributors that a Producer or Band can grant Producer
+- Allowed Contributers -- a set of Contributors that a Producer or Band can grant Contributor
 access to. 
 - Friends -- if set, a limited set of users that are allowed to comment
 on a production.  This one has an include/exclude rule.
@@ -71,6 +71,8 @@ In a project
       - publish button
       
       - subscribe for notification
+      
+      - message badge icon (alerts for messages, takes you to your 'space' and messages)
       
       activities:
         - upload / download (track version)
