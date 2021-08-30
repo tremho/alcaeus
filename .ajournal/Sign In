@@ -38,3 +38,33 @@ Assuming this is still the case, here is the flow:
 - that's it.  but within our own account management we still have to keep track of access permissions, et. al. and of course are sill bound by
 any privacy disclosure or other security breach concerns.
 
+#### Requirement wish-list
+If you sign in with one, and your account is associated with that userID then you sign in with another, it should still work.
+- record the provider name (id) along with the token so you know if you are comparing apples to apples
+- on first ever sign-in, we sign-up, and collect information about the user (email, username, musician info, etc.)
+- if never signed in with the alt-service before, ask questions that will validate. Once cleared in this manner, alert the user by email.
+  - _(because a legitimate FB guy could pretend to be you, and if he knows the answer, become you)_
+- if the 'free to switch providers' option is not viable:
+  - on subsequnt logins, drop the other options from display.
+  - in account settings, allow a new 'sign-up choice' to select a new provider.  
+  
+I'm not a security guy (at least not as of this writing), so I'm not sure what to do here.  But I think option #2 is the more responsible option even though
+it sucks a bit in useability.
+
+###### pitfalls to that
+If you can't login anymore with your selected provider (you forgot your credentials/you were hacked/service is down), you are screwed unless you can try anotehr option.
+
+- if we sign in with other providers while signed in with one, we can validate this.  So maybe have a user flow that invites them to sign in with any providers they think
+they might use, and then jettison the rest.  Again, have an option in account settings that allows us to pick up these 'ignored' ones later if we want (once signed in).
+
+- and then no allowance beyond on-boarded SSOs.
+
+
+### First shared module
+
+This will be the first step for both Alcaeus and Prepared (for Dinner) so it needs to be solid and portable.  It can probably become a Jove standard once matured.
+
+- will need to be sure layout + CSS is set up to be flexible enough for a wide variety of cases.
+- bone simple API.
+- built-in Telemetry option. Look for evil doers.
+
