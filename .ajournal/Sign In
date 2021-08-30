@@ -13,3 +13,28 @@ No user/password recording will be done.  However, I am considering a creating a
 ## First TODO: Read up on each of these
 
 [Sign-in with Apple](https://developer.apple.com/sign-in-with-apple/get-started/)
+[Sign-in with Google](https://developers.google.com/identity/sign-in/web/sign-in)
+[Continue with Facebook](https://developers.facebook.com/docs/facebook-login/)
+
+I am assuming at this point that these are all variations on a theme, although I suspect the Apple feature set is the most enviable.
+
+I am also assuming I have a basic idea of how this works:
+- user picks one and gets verified by the provider.  This might be by cookie or by biometric id, or by a user/password sign-in.  In any of these scenarios,
+we have to be able to surrender control to their web experience.
+
+- we get called back on the listening mechanism (this used to literally be a port, but times have updated things.  I think this can happen with an async web
+request these days.  I think what we had done at INRIX was an AWS service listener for this purpose).
+
+Assuming this is still the case, here is the flow:
+
+- Prior to contacting the SSO, send an id token to our listening service so it knows we are expecting a login.
+- do the SSO thing. it will call back to the listening service with the auth tokens and reference our id, so we can keep this safe (for a limited time)
+- once we know this has been done, we can ask the listening service for our token by id.
+- once delivered, the listening service can flush it.
+- at this point, we have a validated token. this token can be used for SSO-supplied APIs.
+- we may need to call the SSO provider to get user info, or it may come as part of the token delivery.  all we need is a stable user ID.
+- we can use that ID in our own database to link to the account. we already know that this ID is verified as the actual user.
+
+- that's it.  but within our own account management we still have to keep track of access permissions, et. al. and of course are sill bound by
+any privacy disclosure or other security breach concerns.
+
