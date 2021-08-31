@@ -21,3 +21,13 @@ basically, it's set up per [this guide](https://medium.com/@nishankjaintdk/setti
 
 We'll create our Node services in the project tremho-services
 
+###### 8/31 10:18am
+I've got the ec2 setup and a 'connect' script to connect to it in tremho-services.
+I've installed nvm, node, and git so far.
+
+Now I need to make the node services project skeleton so I can deploy it here and get on to the ngnx setup parts.
+
+This readme will likely continue in the tremho-services space.  TTFN
+
+
+
