@@ -12,9 +12,9 @@ No user/password recording will be done.  However, I am considering a creating a
 
 ## First TODO: Read up on each of these
 
-[Sign-in with Apple](https://developer.apple.com/sign-in-with-apple/get-started/)
-[Sign-in with Google](https://developers.google.com/identity/sign-in/web/sign-in)
-[Continue with Facebook](https://developers.facebook.com/docs/facebook-login/)
+[Sign-in with Apple](https://developer.apple.com/sign-in-with-apple/get-started/)  
+[Sign-in with Google](https://developers.google.com/identity/sign-in/web/sign-in)  
+[Continue with Facebook](https://developers.facebook.com/docs/facebook-login/) 
 
 I am assuming at this point that these are all variations on a theme, although I suspect the Apple feature set is the most enviable.
 
