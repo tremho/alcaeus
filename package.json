@@ -1,0 +1,29 @@
+{
+  "name": "alcaeus",
+  "version": "0.0.2",
+  "description": "A collaboration app for musicians",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tremho/alcaeus.git"
+  },
+  "keywords": [
+    "music",
+    "musician",
+    "collaboration",
+    "DAW",
+    "audio"
+  ],
+  "author": "tremho",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/tremho/alcaeus/issues"
+  },
+  "homepage": "https://github.com/tremho/alcaeus#readme"
+}

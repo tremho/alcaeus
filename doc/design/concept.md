@@ -20,24 +20,24 @@ to create music larger than themselves.
 
 There are different roles in this system
 
-- User - one who is logged in and using the product.  Users must
+- `User` - one who is logged in and using the product.  Users must
   be registered.  User info is held centrally.  A user may
   assume any of the following roles, permissions allowing.
-- Public -- Any user can see published material and comment on it
-- Producer -- A user who has a 'space' on the system and can manage
+- `Public` -- Any user can see published material and comment on it
+- `Producer` -- A user who has a 'space' on the system and can manage
 contributions and make releases.  The Producer is in charge of the
 content during creation and the publication of the result.
-- Contributor -- A user who visits a Producer space and contributes a track
+- `Contributor` -- A user who visits a Producer space and contributes a track
 to a work.  Producers control who has access to their projects.
 
 #### Permissions
 - modifies user access
- - Audience -- a set of users that has permissions independent of public
- - Band -- a set of Producers that are allowed access to each other's
+ - `Audience` -- a set of users that has permissions independent of public
+ - `Band` -- a set of Producers that are allowed access to each other's
 space as producers.
-- Allowed Contributers -- a set of Contributors that a Producer or Band can grant Contributor
+- `Allowed Contributers` -- a set of Contributors that a Producer or Band can grant Contributor
 access to. 
-- Friends -- if set, a limited set of users that are allowed to comment
+- `Friends` -- if set, a limited set of users that are allowed to comment
 on a production.  This one has an include/exclude rule.
 
 #### publishing
@@ -51,7 +51,7 @@ The sections of the application are:
 - Recently Published
 - Recent Calls for Contribution
 - sign in / sign up
-- your space
+- your space ("studio")
 - join project
 
 In your space:
